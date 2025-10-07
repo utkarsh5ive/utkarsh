@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: quicksand;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav {
+    height: 11vh;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1 {
+    /* background-color: #a5e223; */
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    letter-spacing: -1px;
+    font-size: 30px;
+    position: relative;
+}
+
+#nav h1::after {
+    content: "©";
+    font-family: quicksand;
+    font-size: 16px;
+    position: absolute;
+    top: 22px;
+    left: 14.2vw;
+
+}
+
+#nav h1::before {
+    content: "created by utkarsh";
+    font-family: quicksand;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: px;
+    font-size: 12px;
+    position: absolute;
+    top: 3vw;
+    left: 9vw;
+
+
+}
+
+#nav h2 {
+    /* background-color: rgb(191, 216, 29); */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+#nav h2:nth-last-child(2) {
+    width: 29%;
+
+}
+
+#nav h2:nth-last-child(1) {
+    width: 10%;
+
+}
+
+#center {
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    padding: 4vw;
+
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#overlay {
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(10px); */
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#over1 h1 {
+    font-family: monument;
+    font-size: 3.6vw;
+    /* mix-blend-mode: difference; */
+
+
+}
+
+#over1 h2 {
+    font-size: 1vw;
+    padding: 2vw 2.4vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#over2 {
+    /* background-color: #b7dd1e; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgb(255, 254, 254);
+    padding: 1.5vw 0;
+
+}
+
+#over2 h4 {
+    font-size: 1.3vw;
+    font-weight: 500;
+
+
+}
+
+#over2 img {
+    height: 3vw;
+    padding-right: 19px;
+
+}
+
+#scroll {
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* padding-bottom: 1vw; */
+
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 1vw;
+    animation: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img {
+    /* display: none; */
+    height: 85%;
+    width: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin: 11px;
+    object-position: 30% 30%;
+
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet {
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabet h5 {
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    margin-right: 2vw;
+
+}
+
+#alphabet h6 {
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.026);
+    transition: all ease 0.2s;
+
+}
+
+#alphabet h6:hover {
+    border: 1px solid black;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+
+}
+
+#page2-part1 {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://i.pinimg.com/1200x/a8/89/3d/a8893d84704934a62793ef704e7cd1bb.jpg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+}
+
+#page2-part2 {
+    height: 100%;
+    width: 46%;
+
+}
+
+#page2-part2 img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+#page2-part2 h2 {
+    position: absolute;
+}
+
+#page2-part2 h4 {
+    display: flex;
+    font-weight: 600;
+    padding-left: 50vh;
+    margin-bottom: 25vh;
+
+
+}
+
+#page2-part3 img {
+    height: 100%;
+    width: 100%;
+    object-position: top;
+    object-position: right;
+
+
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#page3-part1 h1 {
+    font-size: 40px;
+    font-family: monument;
+    padding-left: 6vw;
+}
+
+#page3-part1 img {
+    height: 40%;
+    width: 30%;
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    margin-bottom: 10vh;
+}
+
+#page3-part1 h2 {
+    padding-left: 8vw;
+    padding-bottom: 8vh;
+    /* background-color: red; */
+
+}
+
+#page3-part2 img {
+    height: 100%;
+    width: 100%;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 4vh;
+
+}
+
+#page4 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+
+#page4>h1 {
+    font-size: 50px;
+    font-family: monument;
+    text-align: center;
+    padding-top: 15vh;
+    margin-bottom: 8vh;
+}
+
+.elem {
+    height: 18vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.elem h4 {
+    padding-left: 8vw;
+}
+
+.elem h1 {
+    font-size: 2vw;
+    font-size: 600;
+    /* background-color: red; */
+    padding-right: 20vw;
+}
+
+
+.elem:nth-last-child(1) {
+    border-bottom: 2px solid black;
+}
+
+.elem img {
+    height: 8vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 15%;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+
+.elem:nth-last-child(1) img {
+    left: 40%;
+}
+
+.elem:nth-last-child(3) img {
+    left: 40%;
+}
+
+.elem:hover img {
+    opacity: 1;
+    left: 30%;
+}
+
+#page5 {
+    height: 100%;
+    width: 100%;
+}
+
+#page5-part1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#page5-part1 h1 {
+    font-family: monument;
+    font-size: 40px;
+    padding-left: 50vw;
+    padding-top: 9vw;
+    position: absolute;
+}
+
+#page5-part1 h2 {
+    padding-left: 50vw;
+    padding-top: 14vw;
+    position: absolute;
+    /* color: rgb(30, 114, 114); */
+}
+
+#page5-part1 h4 {
+    padding-left: 50vw;
+    padding-top: 22.5vw;
+    position: absolute;
+}
+
+#page5-part1 img {
+    height: 80vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-top: 9vw;
+    margin-left: 7vw;
+    border-radius: 10px;
+
+}
+
+#page5-part2 img {
+    height: 19vw;
+    width: 15vw;
+    margin-left: 72vw;
+    margin-top: 28vw;
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+    /* margin-right: 60vw; */
+}
+
+#page5-part3 img {
+    height: 19vw;
+    width: 21vw;
+    margin-left: 50vw;
+    margin-top: 28vw;
+    position: absolute;
+    object-fit: cover;
+    display: flex;
+    border-radius: 10px;
+}
+
+#page5-part4 img {
+    height: 40vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 54vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+
+}
+
+#page6 {
+    height: 100%;
+    width: 100%;
+}
+
+#page6-part1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#page6-part1 img {
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
+    margin-top: 54vw;
+    margin-left: 7vw;
+    border-radius: 10px;
+
+}
+
+#page6-part2 img {
+    height: 33vw;
+    width: 32vw;
+    margin-left: 60vw;
+    margin-top: 54vw;
+    object-fit: cover;
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+}
+
+#page6-part3 h2 {
+    padding-left: 60vw;
+    padding-top: 89vw;
+    position: absolute;
+}
+
+#page6-part3 h4 {
+    padding-left: 76vw;
+    padding-top: 89vw;
+    position: absolute;
+}
+
+#marque {
+    /* height: 15vh; */
+    width: 100%;
+    margin-top: 62vw;
+    padding: 0.8vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+#marque h1 {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    letter-spacing: 3px;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    display: flex;
+
+}
+
+#footer h1 {
+    font-size: 3vw;
+    font-family: monument;
+    text-transform: uppercase;
+    margin-top: 6vw;
+    padding-left: 7vw;
+}
+
+#footer-part1 h4 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 8vw;
+    margin-top: 6vw;
+    display: flex;
+    /* background-color: red; */
+}
+
+#footer-part1 img {
+    height: 18vw;
+    width: 32vw;
+    padding-left: 7vh;
+    margin-top: 3vw;
+    margin-left: 5vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#footer-part2 h4 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 4vw;
+    margin-top: 6vw;
+    display: flex;
+    /* background-color: red; */
+}
+
+#footer-part2 img {
+    height: 18vw;
+    width: 32vw;
+    padding-left: 7vh;
+    margin-top: 3vw;
+    margin-left: 1vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#end {
+    height: 35%;
+    width: 100%;
+}
+
+#base {
+    height: 30vh;
+    width: 100%;
+    background-color: #f8f8f8;
+    /* margin-top: 40px; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#base h1 {
+    /* background-color: #a5e223; */
+    height: 100%;
+    width: 18%;
+    padding-bottom: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6vw;
+    font-family: monument;
+    letter-spacing: -1px;
+    font-size: 35px;
+    position: relative;
+}
+
+#base h1::after {
+    content: "©";
+    font-family: quicksand;
+    font-size: 18px;
+    position: absolute;
+    top: 37px;
+    left: 18vw;
+
+}
+
+#base h1::before {
+    content: "created by utkarsh";
+    font-family: quicksand;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: px;
+    font-size: 12px;
+    position: absolute;
+    top: 4.5vw;
+    left: 12vw;
+
+
+}
+
+#base h2 {
+    /* background-color: rgb(191, 216, 29); */
+    height: 100%;
+    width: 30%;
+    display: flex;
+    padding-bottom: 6vw;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 1vw;
+
+}
